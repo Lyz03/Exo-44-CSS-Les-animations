@@ -1,0 +1,55 @@
+
+div.animation {
+    font-size: 1.1rem;
+    width: 100%;
+    background-color: lightgray;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation {
+
+    from {
+        font-size: 1rem;
+        background-color: white;
+    }
+
+    50% {
+        transform-origin: center center;
+        transform: rotate(10deg);
+    }
+
+    to {
+        font-size: 2rem;
+        width: 50%;
+        background-color: gray;
+        transform: scale(1.2);
+    }
+
+}
+
+div.right_left {
+    position: absolute;
+    top: 300px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    animation-name: right_left;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+@keyframes right_left {
+
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 95%;
+    }
+
+}
